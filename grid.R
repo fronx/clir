@@ -1,4 +1,4 @@
-source('cli.R')
+source('lib/cli.R', chdir=TRUE)
 
 input <- read.delim("stdin",
                     header=TRUE,
@@ -27,4 +27,4 @@ p <- apply_env_limits(p)
 print(p)
 
 # Example:
-# cat $CLIR_HOME/samples/grid.tsv | ymin=1 ymax=200 Rscript grid.R example_grid.pdf date value num_people && clir-open example_grid.pdf
+# cat $CLIR_HOME/samples/grid.tsv | ymin=1 ymax=10 clir grid.R example_grid.pdf date value num_people && clir-open example_grid.pdf

@@ -1,0 +1,2 @@
+#!/bin/bash
+rm $(dirname $0)/out/$1

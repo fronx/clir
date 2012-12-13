@@ -1,4 +1,4 @@
-source('cli.R')
+source('lib/cli.R', chdir=TRUE)
 
 input <- read.delim("stdin",
                     header=TRUE,

@@ -19,6 +19,16 @@ Then run:
 clir-init
 ```
 
+## Usage
+
+```bash
+clir-ls              # show list of files produced by clir
+clir-rm <filename>   # remove a clir output file
+clir-open <filename> # open a clir output file
+clir <scriptname> <output filename> <args>
+clir                 # list available R scripts
+```
+
 ## Examples
 
 Run these to get an idea of what they do:

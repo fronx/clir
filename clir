@@ -1,2 +1,8 @@
 #!/bin/bash
-(cd $(dirname $0); Rscript $*)
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied. Available R scripts:"
+    (cd $(dirname $0); ls *.R)
+  else
+    (cd $(dirname $0); Rscript $*)
+fi

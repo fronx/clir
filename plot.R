@@ -1,4 +1,4 @@
-source('cli.R')
+source('lib/cli.R', chdir=TRUE)
 
 input <- read.delim("stdin",
                     header=TRUE,
@@ -27,4 +27,4 @@ print(p)
 # Examples:
 # cat $CLIR_HOME/samples/plot.tsv | clir plot.R example_plot.pdf a b && clir-open example_plot.pdf
 # cat $CLIR_HOME/samples/multi_plot.tsv | clir plot.R example_multi_plot.pdf a b c && clir-open example_multi_plot.pdf
-# cat $CLIR_HOME/samples/multi_plot.tsv | xmin=1 xmax=3 ymin=1 ymax=30 Rscript plot.R example_multi_plot.pdf a b c && clir-open example_multi_plot.pdf
+# cat $CLIR_HOME/samples/multi_plot.tsv | xmin=1 xmax=3 ymin=1 ymax=30 clir plot.R example_multi_plot.pdf a b c && clir-open example_multi_plot.pdf
