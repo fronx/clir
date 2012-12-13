@@ -1,2 +1,2 @@
 #!/bin/bash
-ls $(dirname $0)/out/
+ls $* $(dirname $0)/out/
